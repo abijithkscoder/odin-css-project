@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 1rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        nav a {
+            color: #9ca3af;
+            text-decoration: none;
+            margin-left: 2rem;
+        }
+
+        .hero {
+            background-color: #1f2937;
+            color: white;
+            padding: 4rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            color: #9ca3af;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-image {
+            flex: 1;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .features {
+            padding: 4rem 10%;
+            text-align: center;
+        }
+
+        .features h2 {
+            margin-bottom: 3rem;
+            color: #1f2937;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .feature-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            border: 2px solid #3b82f6;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .feature-item p {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .quote {
+            background-color: #e5e7eb;
+            padding: 4rem 10%;
+            text-align: center;
+        }
+
+        .quote p {
+            font-style: italic;
+            font-size: 1.5rem;
+            color: #4b5563;
+            max-width: 800px;
+            margin: 0 auto 1rem auto;
+        }
+
+        .quote-author {
+            font-weight: bold;
+            color: #1f2937;
+            text-align: right;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta {
+            background-color: #3b82f6;
+            color: white;
+            margin: 4rem 10%;
+            padding: 3rem;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .button {
+            background-color: #3b82f6;
+            color: white;
+            padding: 0.5rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta .button {
+            border: 2px solid white;
+        }
+
+        footer {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">PLADICO</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Catogories</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>This website is awesome</h1>
+            <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
+            <a href="#" class="button">Sign up</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://cdn.pixabay.com/photo/2022/09/29/03/17/baby-7486419_640.jpg" alt="Hero section image">
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Some random information.</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <img src="https://cdn.pixabay.com/photo/2023/08/04/08/00/coneflower-8168628_640.jpg" alt="Feature 1">
+                <p>paragliden flower</p>
+            </div>
+            <div class="feature-item">
+                <img src="https://cdn.pixabay.com/photo/2017/03/27/13/52/person-2178868_640.jpg" alt="Feature 2">
+                <p>travel the place of france and cisco</p>
+            </div>
+            <div class="feature-item">
+                <img src="https://cdn.pixabay.com/photo/2018/10/19/12/14/train-3758523_640.jpg" alt="Feature 3">
+                <p>the georgious train</p>
+            </div>
+            <div class="feature-item">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/05/55/asphalt-1867667_640.jpg" alt="Feature 4">
+                <p>the road of silence</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote">
+        <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
+        <div class="quote-author">-Thor, God of Thunder</div>
+    </section>
+
+    <section class="cta">
+        <div>
+            <h3>Call to action! It's time!</h3>
+            <p>Sign up for our product by clicking that button right over there!</p>
+        </div>
+        <a href="#" class="button">Sign up</a>
+    </section>
+
+    <footer>
+        Copyright © The Odin Project 2021
+    </footer>
+</body>
+</html>
